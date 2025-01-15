@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+} 
+html {
+    scroll-behavior: smooth;  
 }
 body{
     background-color: #F1F1F3;
     font-family: "Arial" sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 /*Header style*/
 header{
@@ -96,6 +101,10 @@ header{
     padding: 35px 0 0 15px;
     margin-bottom: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 .card img{
     width: 40px;
@@ -477,9 +486,229 @@ header{
     margin: 0 auto;
 }
 .footer-icon img{
+    width: 32px;
+    transition: transform 0.3s ease, filter 0.3s ease;
     margin-left: 10px;
-    width: 20px;
-    height: auto;
+}
+.footer-icon a img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.5);
 }
 
+/* Responsive Design for Mobile Devices */
+@media (max-width: 568px) {
 
+    /* General Styles */
+    body {
+        margin: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        padding: 20px 0;
+    }
+
+    .header-left {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .header-btn {
+        margin-top: 10px;
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .hero-area {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .text-side {
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-side h2 {
+        font-size: 28px;
+    }
+
+    .img-side img {
+        width: 60%;
+        height: auto;
+        margin-left: 90px;
+        margin-bottom: 60px;
+
+    }
+
+    /* Card Section */
+    .card-area {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    /* Vision Section */
+    .visione {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .vision-area {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .one, .two, .three {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    /* News Section */
+    .news {
+        width: 100%;
+    }
+
+    .news-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .image-side img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .text-area {
+        text-align: center;
+    }
+
+    .text-area h3 {
+        font-size: 20px;
+    }
+
+    /* Quote Section */
+    .qouet-area {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Donate Section */
+    .donate-side {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* Subscription Section */
+    .subscribe-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .subscribe-container input[type="email"] {
+        width: 90%;
+    }
+
+    .subscribe-container button {
+        width: 90%;
+        margin-left: 0;
+        border-radius: 5px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-icon {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-icon img {
+        margin: 0;
+    } 
+    .footer-icon{
+        border-top: 1px solid gainsboro;
+        padding-top: 10px;
+        width: 200px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 568px) {
+    /* Opinion Area */
+    .opinion-section {
+        width: 100%;
+        margin: 20px auto;
+        border: none;
+        box-shadow: none;
+        padding: 10px;
+    }
+
+    .opinion-header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .opinion-header h3 {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .opinion-table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .opinion-table th,
+    .opinion-table td {
+        padding: 8px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .opinion-button {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .dropdown {
+        font-size: 13px;
+        padding: 5px;
+        width: 100%;
+    }
+
+    
+}
